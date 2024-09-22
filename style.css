@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins' sans-serif;
+}
+:root{
+    --main-color: #081b29;
+    --sec-main-color: #112e42;
+    --text-color: #ededed;
+}
+body{
+    overflow: hidden;
+}
+.home{
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    background: black;
+}
+.home-content{
+    transform: translateY(200px);
+    position: relative;
+    margin-left: 50px;
+    color: var(--text-color);
+}
+.home-content h3{
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+.home-content h1{
+    font-size: 56px;
+    font-family: "Gloria Hallelujah", cursive;
+    color: var(--sec-main-color);
+}
+.home-content p{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.social-media a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 4rem;
+    height: 4rem;
+    color: var(--main-color);
+    background: var(--text-color);
+    border: .1rem solid var(--main-color);
+    border-radius: 50%;
+    font-size: 2rem;
+    margin: 2.5rem 1.5rem 3rem 0;
+    transition: .3s;
+}
+.social-media a:hover{
+    background: var(--sec-main-color);
+    color: var(--text-color);
+}
+.home-img{
+    transform: translate(800px, -400px);
+}
+.home-img img{
+    height: 100vh;
+    width: 50%;
+}
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .home-content {
+        transform: translateY(100px);
+        margin-left: 20px;
+        text-align: center;
+    }
+
+    .home-content h1 {
+        font-size: 36px;
+    }
+
+    .home-content h3, .home-content p {
+        font-size: 18px;
+    }
+
+    .social-media a {
+        width: 3rem;
+        height: 3rem;
+        font-size: 1.5rem;
+        margin: 1.5rem 1rem 2rem 0;
+    }
+
+    .home-img {
+        transform: translate(0, 0);
+        display: flex;
+        justify-content: center;
+    }
+
+    .home-img img {
+        height: auto;
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-content {
+        transform: translateY(50px);
+        margin-left: 10px;
+        text-align: center;
+    }
+
+    .home-content h1 {
+        font-size: 28px;
+    }
+
+    .home-content h3, .home-content p {
+        font-size: 16px;
+    }
+
+    .social-media a {
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 1.2rem;
+        margin: 1rem 0.5rem 1.5rem 0;
+    }
+
+    .home-img img {
+        width: 90%;
+    }
+}
